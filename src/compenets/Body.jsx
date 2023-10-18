@@ -1,5 +1,8 @@
 import React from 'react'
 import { AiFillCaretRight } from "react-icons/ai";
+import logo from '../assets/wallpaperflare.com_wallpaper.jpg';
+
+
 function Body() {
   return (
     <div>
@@ -13,6 +16,7 @@ function Body() {
                 <button className=' font-mono text-xl  flex mt-6 w-48 rounded-xl bg-orange-400 p-3'>Order Now <AiFillCaretRight className=' ms-2 mt-1.5 text-xl '/>
                 </button>
             </div>
+            
         </main>
     </div>
   )
