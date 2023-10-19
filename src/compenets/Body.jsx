@@ -7,7 +7,7 @@ function Body(props) {
       const {title,info,img,derection }=props
 
   return (
-    <div className=''>
+    <div >
         <main 
         className={` ${derection=='row-reverse'?'flex-row-reverse':''} p-20 flex justify-between`}>
             <div

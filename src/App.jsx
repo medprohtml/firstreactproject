@@ -1,7 +1,6 @@
 
 import './App.css'
 import Body from './compenets/Body'
-
 import Navbar from './compenets/navbar'
 import image from './assets/1290174.jpg'
 import Lessalade from './compenets/Lessalade'

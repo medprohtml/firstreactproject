@@ -17,9 +17,10 @@ function Navbar() {
   return (
        
         
-         <nav className=' w-full flex justify-between items-start  md:items-center    bg-transparent '>
-         <img src={logo}  className=' w-44 h-44' alt="" srcset="" />
-              <ul className={`${!openmenu?"hidden":""} md:flex  md:flex-row flex-col mt-14  md:mt-0 items-start`}  >
+         <nav 
+  className=' fixed  w-full flex justify-between md:items-center mt-1 bg-slate-50 shadow-md items-start '>
+         <img src={logo}  className=' w-20 h-20 mt-0 items-start' alt="" srcset="" />
+              <ul className={`${!openmenu?"hidden":""} md:flex  md:flex-row flex-col mt-10 md:mt-0 items-start`}  >
                  <li  className=' p-4 '>Home</li>
                  <li  className=' p-4'>About</li>
                  <li  className=' p-4'>Testemoniale</li>
@@ -28,17 +29,23 @@ function Navbar() {
                   />
 
 
-                 <ul className={`${!openmenu2?"hidden":""} absolute top-32  flex  shadow-md rounded-md p-6 items-center`}>
+                 <ul className={`${!openmenu2?"hidden":""} absolute top-20 bg-white flex  shadow-md rounded-md p-6 items-center`}>
                  <li className=' p-2 flex'><AiOutlineFacebook  className=' mt-1 '/> facebook</li>
                     <li className=' p-2 flex'> <AiFillInstagram className=' mt-1 '/> instagram</li>
                     <li className=' p-2 flex'><AiFillLinkedin className=' mt-1 '/> linkedin</li>
                  </ul>
                     
                  </li>
-                 <li  className=' p-4 '><AiOutlineShoppingCart className=' mt-1 text-xl'/></li>
+                 <li  className=' p-4 '>
+                 <span 
+                className=' absolute top-64 mt-2 md:mt-0 ms-3 md:top-4 md:ms-3 bg-orange-400 px-1  rounded-md'> 0</span>
+                  <AiOutlineShoppingCart className=' relative mt-1 text-xl'/></li>
                  <li className='  p-4 ms-2 rounded-xl bg-orange-500 '>  Booking New</li>
               </ul>
-              <div> <AiOutlineMenu onClick={open} className=' text-xl mt-16 md:hidden sm:flex'/> </div>
+              <div  > 
+                <AiOutlineMenu onClick={open} className='  mt-8   text-xl  md:hidden sm:flex'/>
+                
+                 </div>
          </nav>
 
      
