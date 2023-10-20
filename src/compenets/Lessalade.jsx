@@ -7,28 +7,36 @@ import salade3 from '../assets/salade3.jpg'
 import salade4 from '../assets/salade4.jpeg'
 
 
-function Lessalade() {
+function Lessalade(props) {
+  const addtocart=props.addtocart
 const[salade, setSalade] = useState([
     {name: "Salade",
     price: 2.5,
     quantity: 0,
-    image: salade1},
+    image: salade1,
+    totalprice: 0
+  },
     {name: "Tomate",
     price: 1.5,
     quantity: 0,
-    image: salade2},
+    image: salade2,
+    totalprice: 0
+  },
     {name: "Oignon",
     price: 1.5,
     quantity: 0,
-    image: salade3},
+    image: salade3,
+    totalprice: 0},
     {name: "Carotte",
     price: 1.5,
     quantity: 0,
-    image: salade4}
-])
+    image: salade4,
+    totalprice: 0}
+]);
+
   return (
     <div>
-     <Saladelist salade={salade}/>
+     <Saladelist salade={salade}  addtocart={addtocart}/>
 
     </div>
   )

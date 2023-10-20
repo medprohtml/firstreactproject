@@ -3,7 +3,8 @@ import logo from '../assets/Foodie-removebg-preview.png'
 
 import { AiOutlineShoppingCart,AiFillCaretDown, AiOutlineMenu,AiOutlineFacebook,AiFillLinkedin,AiFillInstagram} from "react-icons/ai";
 
-function Navbar() {
+function Navbar(props) {
+  const aded=props.aded
   const [openmenu,setOpenmen]=useState(false)
   const open=()=>{
     setOpenmen(!openmenu)
@@ -38,7 +39,7 @@ function Navbar() {
                  </li>
                  <li  className=' p-4 '>
                  <span 
-                className=' absolute top-64 mt-2 md:mt-0 ms-3 md:top-4 md:ms-3 bg-orange-400 px-1  rounded-md'> 0</span>
+                className=' absolute top-64 mt-2 md:mt-0 ms-3 md:top-4 md:ms-3 bg-orange-400 px-1  rounded-md'> {aded.length}</span>
                   <AiOutlineShoppingCart className=' relative mt-1 text-xl'/></li>
                  <li className='  p-4 ms-2 rounded-xl bg-orange-500 '>  Booking New</li>
               </ul>
