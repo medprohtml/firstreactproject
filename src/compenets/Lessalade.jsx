@@ -14,24 +14,30 @@ const[salade, setSalade] = useState([
     price: 2.5,
     quantity: 0,
     image: salade1,
-    totalprice: 0
+    totalprice: 0,
+    quant:0
   },
     {name: "Tomate",
     price: 1.5,
     quantity: 0,
     image: salade2,
-    totalprice: 0
+    totalprice: 0,
+    quant:0
   },
     {name: "Oignon",
     price: 1.5,
     quantity: 0,
     image: salade3,
-    totalprice: 0},
+    totalprice: 0,
+    quant:0
+  },
     {name: "Carotte",
     price: 1.5,
     quantity: 0,
     image: salade4,
-    totalprice: 0}
+    totalprice: 0,
+    quant:0
+  }
 ]);
 
   return (

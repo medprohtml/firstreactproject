@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../assets/Foodie-removebg-preview.png'
-
+import { Link } from 'react-router-dom'
 import { AiOutlineShoppingCart,AiFillCaretDown, AiOutlineMenu,AiOutlineFacebook,AiFillLinkedin,AiFillInstagram} from "react-icons/ai";
 
 function Navbar(props) {
@@ -19,7 +19,7 @@ function Navbar(props) {
        
         
          <nav 
-  className=' fixed  w-full flex justify-between md:items-center mt-1 bg-slate-50 shadow-md items-start '>
+  className='   w-full flex justify-between md:items-center mt-1 bg-slate-50 shadow-md items-start '>
          <img src={logo}  className=' w-20 h-20 mt-0 items-start' alt="" srcset="" />
               <ul className={`${!openmenu?"hidden":""} md:flex  md:flex-row flex-col mt-10 md:mt-0 items-start`}  >
                  <li  className=' p-4 '>Home</li>
@@ -40,7 +40,7 @@ function Navbar(props) {
                  <li  className=' p-4 '>
                  <span 
                 className=' absolute top-64 mt-2 md:mt-0 ms-3 md:top-4 md:ms-3 bg-orange-400 px-1  rounded-md'> {aded.length}</span>
-                  <AiOutlineShoppingCart className=' relative mt-1 text-xl'/></li>
+                 <Link to="Cart"> <AiOutlineShoppingCart className=' relative mt-1 text-xl'/></Link></li>
                  <li className='  p-4 ms-2 rounded-xl bg-orange-500 '>  Booking New</li>
               </ul>
               <div  > 
